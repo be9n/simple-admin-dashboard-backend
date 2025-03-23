@@ -18,13 +18,13 @@ class DatabaseSeeder extends Seeder
         // Category::factory(10)->hasProducts(3)->create();
         // Product::factory(100)->create();
 
-        $user = User::where('email', 'apo@gmail.com')->first();
-        if (!$user) {
-            User::create([
-                'name' => 'Apo',
-                'email' => 'apo@gmail.com',
-                'password' => '123123'
-            ]);
-        }
+        // $user = User::where('email', 'apo@gmail.com')->first();
+        // if (!$user) {
+        User::create([
+            'name' => 'Apo',
+            'email' => 'apo@gmail.com',
+            'password' => '123123'
+        ]);
+        // }
     }
 }
