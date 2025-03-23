@@ -15,8 +15,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        Category::factory(10)->create();
-        Product::factory(100)->create();
+        Category::create([
+            'name' => 'Electronics',
+        ]);
+        Product::create([
+            'category_id' => 1,
+            'name' => 'Laptop',
+            'price' => 1000,
+        ]);
 
         $user = User::where('email', 'apo@gmail.com')->first();
         if (!$user) {
