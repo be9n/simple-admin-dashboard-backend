@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
 
         $user = User::where('email', 'apo@gmail.com')->first();
         if (!$user) {
-            User::factory()->create([
+            User::create([
                 'name' => 'Apo',
                 'email' => 'apo@gmail.com',
                 'password' => '123123'
