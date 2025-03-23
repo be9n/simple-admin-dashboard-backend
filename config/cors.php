@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['http://localhost:5173'],
+    'allowed_origins' => ['http://localhost:5173', 'https://simple-admin-dashboard-frontend-m14f.vercel.app'],
 
     'allowed_origins_patterns' => [],
 
